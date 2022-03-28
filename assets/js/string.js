@@ -23,7 +23,7 @@ fullName=`${firstName} ${lastName} ${city}`
 console.log(fullName)
 
 //space is considered as a value is js
-// so firstName=" Norah" is not the same as firstName="Norah"
+// so firstName="   Norah" is not the same as firstName="Norah" because of the space before the first one.
 //comparing the 2 will yield false
 firstName=" Norah";
 name="Norah";
@@ -35,7 +35,6 @@ firstName=" Norah";
 name="Norah";
 console.log(firstName.trimStart() ==name)
 
-//changing string case
 let codeQueenAddress={
     town:"Ntinda",
     city:"Kampala",
@@ -49,4 +48,34 @@ console.log(codeQueenAddress.office)//dot notation and this is used when we are 
 console.log(codeQueenAddress['building'])//subscript method
 console.log(codeQueenAddress[1411])//square brackets used for numbers/none strings
 
+let firstChildName="Kaitlyn";
+console.log(firstChildName.slice(0,4))
+console.log(firstChildName.slice(-3))
+if(firstChildName.includes('Kait')){
+    console.log('found Kait!')
+}
+else{
+    console.log('not discovered')
+}
 
+if(firstChildName.includes('Kair')){
+    console.log('found Kair!')
+}
+else{
+    console.log('ooops,not discovered!')
+}
+
+//finding the length of a string.
+console.log(firstChildName.length)
+let alphabet="abcdefghijklmnopqrstuvwxyz"
+console.log(alphabet.length)
+
+const person={
+    name:"Norah",
+    contact :{
+        phone: "0708104601",
+        email:"norah200@gmail.com",
+        ig:"instagram.com/norah16"
+     }
+}
+//accessing data within a nested object
