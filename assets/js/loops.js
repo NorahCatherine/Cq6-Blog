@@ -36,3 +36,14 @@ do {
     i++;
 }
 while(i <= 5);
+
+//assigment about an elevator on the basement to move to level 3
+for(let level=0; level<4;level++){
+    console.log('still elevating to 4!')
+}
+//elevating using if
+let level=0;
+if(level==4){
+    console.log('elevated to level 4!')
+}
+
